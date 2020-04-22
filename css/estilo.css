@@ -1,0 +1,292 @@
+body{
+    padding: 0px;
+    margin: 0px;
+   
+    
+    
+}
+.container{
+    width: 100%;
+    max-width: 1920px;
+    height: 200px;
+    background-color: #ccc;
+    transition: 2s linear ;
+}
+.logo{
+    width:100%;
+    max-width: 1920px;
+  
+    height: 200px;
+   
+   
+}
+.logoint{
+    width: 50%;
+    max-width: 960px;
+    height: 200px;
+   
+    float: left;
+}
+
+.logotit{
+    font-size: 60px;
+    width: 50%;
+   height: 200px;
+   display: flex;
+   justify-content: center;
+   line-height: 200px;
+   position: absolute;
+    transform: rotateX(0deg);
+    backface-visibility: hidden;
+    transition:all .4s linear;
+    font-family: 'Russo One', sans-serif;
+    color: rgb(24, 4, 95);
+    text-shadow: 2px 2px 2px #ddd;
+}
+.logotitfundo{
+    font-size: 60px;
+    width: 50%;
+   height: 200px;
+   display: flex;
+   justify-content: center;
+   line-height: 200px;
+   position: absolute;
+    transform: rotateX(180deg);
+    backface-visibility: hidden;
+    transition:all .4s linear;
+    font-family: 'Russo One', sans-serif;
+    color: rgb(24, 4, 95);
+    text-shadow: 2px 2px 4px #ccc;
+                    
+}
+.logoint:hover .logotit{
+    transform: rotateX(-180deg);
+    cursor: pointer;
+}
+.logoint:hover .logotitfundo{
+    transform: rotateX(0deg);
+    cursor: pointer;
+}
+.menu{
+    display: flex;
+    width: 50%;
+    max-width: 960px;
+    height: 200px;
+    background-color:#ccc;
+    float: left;
+    justify-content: center;
+    align-items: center;
+
+}
+.menu ul li{
+    float: left;
+    margin: 20px;
+    padding: 10px;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Russo One', sans-serif;
+    color: rgb(24, 4, 95);
+    font-size: 24px;
+    background-color: aqua;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.menu ul:hover li a {
+     text-decoration: underline;
+    color: brown;
+    transition: all 1s linear;
+}
+ 
+.menu ul li a{
+    text-decoration: none;
+    color: rgb(24, 4, 95);
+}
+
+
+
+.video{
+    width: 100%;
+     height:auto;
+    margin: 0px;
+    padding: 0px;
+   position: absolute;
+   margin-bottom: 0;
+   
+   
+  }
+.links{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    display: flex;
+
+}
+ .links label{
+    padding: 3px 0;
+    flex-grow: 1;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-family: 'Russo One', sans-serif;
+    color: rgb(24, 4, 95);
+    text-align: center;
+    font-size: 24px;
+    
+    
+}
+.scroll input{
+    display: none;
+}
+
+.bloco{
+    width: 99vw;
+    max-width: 1920px;
+    height: 100vh;
+   
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+#trabalhos{
+    background-color: rgba(255, 255,255,.2);
+
+    
+}
+#localizacao{
+    background-color: rgba(255, 255,255,.2);
+
+}
+#contato{
+    background-color: rgba(255, 255,255,.2);
+}
+.scroll{
+    display: flex;
+    width: 99vw;
+    height: 690px;
+    overflow: hidden;
+}
+.sections{
+    transition: 0.4s;
+}
+#rdlocalizacao:checked ~ .sections{
+    margin-top: -100vh;
+}
+#rdcontato:checked ~ .sections{
+    margin-top: -200vh;
+}
+.rodape{
+    position: absolute;
+    font-family: 'Russo One', sans-serif;
+    color: rgb(24, 4, 95);
+    text-shadow: 2px 2px 4px #ccc;
+    font-size: 30px;
+    text-align: center;
+    height: 20px;
+    left: 37%;
+}
+.conteudo{
+    width: 100%;
+    max-width: 1920px;
+    height: 900px;
+
+}
+.projetos{
+    display: flex;
+    flex-flow:wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 2px;
+    width:100%;
+    height: auto;
+    font-family: 'Russo One', sans-serif;
+    color:#000;
+    font-size: 20px;
+    
+    
+}
+.proconteudo{
+    width: 100%;
+    max-width: 470px;
+    height: auto;
+    cursor: pointer;
+    margin: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.proconteudo p{
+    display: none;
+}
+.proconteudo:hover p{
+    height: auto;
+    display: inline-block;
+    text-align: center;
+    font-size: 22px;
+}
+
+.card{
+    width: 350px;
+    height: 400px;
+    float: left;
+    margin: 10px;
+    margin-left: 220px;
+   padding: 2px;
+    
+}
+.cardfrente{
+    font-size: 60px;
+    width: 350px;
+   height: 200px;
+   display: flex;
+   justify-content: center;
+   line-height: 200px;
+   position: absolute;
+    transform: rotatey(0deg);
+    backface-visibility: hidden;
+    transition:all .4s linear;
+    font-family: 'Russo One', sans-serif;
+    color: rgb(24, 4, 95);
+    text-shadow: 2px 2px 2px #ddd;
+}
+.cardfundo{
+    font-size: 20px;
+    width: 350px;
+   height: 200px;
+   display: flex;
+   justify-content: flex-start;
+   text-align: center;
+   position: absolute;
+    transform: rotatey(180deg);
+    backface-visibility: hidden;
+    transition:all .4s linear;
+    font-family: 'Russo One', sans-serif;
+    color: #000;
+    
+    
+                    
+}
+.card:hover .cardfrente{
+    transform: rotatey(-180deg);
+    cursor: pointer;
+}
+.card:hover .cardfundo{
+    transform: rotatey(0deg);
+    cursor: pointer;
+    
+}
+.card img{
+    border-radius: 5px;
+}
+
+
+    
+    
+
+
